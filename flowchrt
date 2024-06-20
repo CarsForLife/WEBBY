@@ -1,0 +1,11 @@
+graph TD;
+    A[User Enters Address] --> B[Fetch Balance];
+    B --> C[Display Balance];
+    A --> D[User Enters Transfer Details];
+    D --> E[Click Transfer Button];
+    E --> F[Call Transfer Function];
+    F --> G[Transaction Successful?];
+    G -->|Yes| H[Update Balance];
+    H --> I[Display Success Message];
+    G -->|No| J[Display Error Message];
+    H --> K[Add Transaction to List];
